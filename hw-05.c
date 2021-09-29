@@ -29,4 +29,5 @@ int main(){
     printf("p: %p points to: %c\n", unsignCharPointer, *unsignCharPointer);
     printf("unsignInt in hex: %x\n", unsignInt);
     printf("unsignInt in decimal: %u\n", unsignInt);
+    printf("unsignInt but byted out: %hhx\n", *unsignCharPointer);
 }
