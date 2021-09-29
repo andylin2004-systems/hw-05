@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    char character = "h";
+    char character = 'h';
     int integer = 1;
     long longNum = 1;
     printf("char mem address hex: %p\n", &character);
@@ -16,4 +16,10 @@ int main(){
     printf("char mem pointer address: %p\n", characterPointer);
     printf("int mem pointer address: %p\n", integerPointer);
     printf("long mem pointer address: %p\n", longPointer);
+    *characterPointer = 'a';
+    *integerPointer += 1;
+    *longPointer += 1;
+    printf("char new value to a: %c\n", character);
+    printf("int new value plus 1: %d\n", integer);
+    printf("long new value plus 1: %ld\n", longNum);
 }
