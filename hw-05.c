@@ -27,4 +27,6 @@ int main(){
     char *unsignCharPointer = &unsignInt;
     printf("p: %p points to: %d\n", unsignIntPointer, *unsignIntPointer);
     printf("p: %p points to: %c\n", unsignCharPointer, *unsignCharPointer);
+    printf("unsignInt in hex: %x\n", unsignInt);
+    printf("unsignInt in decimal: %u\n", unsignInt);
 }
