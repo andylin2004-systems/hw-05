@@ -22,4 +22,9 @@ int main(){
     printf("char new value to a: %c\n", character);
     printf("int new value plus 1: %d\n", integer);
     printf("long new value plus 1: %ld\n", longNum);
+    unsigned int unsignInt = 65;
+    int *unsignIntPointer = &unsignInt;
+    char *unsignCharPointer = &unsignInt;
+    printf("p: %p points to: %d\n", unsignIntPointer, *unsignIntPointer);
+    printf("p: %p points to: %c\n", unsignCharPointer, *unsignCharPointer);
 }
