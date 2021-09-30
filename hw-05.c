@@ -29,5 +29,6 @@ int main(){
     printf("p: %p points to: %c\n", unsignCharPointer, *unsignCharPointer);
     printf("unsignInt in hex: %x\n", unsignInt);
     printf("unsignInt in decimal: %u\n", unsignInt);
-    printf("unsignInt but byted out: %hhx\n", *unsignCharPointer);
+    printf("unsignInt hex byte 0: %hhx byte 1: %hhx byte 2 %hhx byte 3 %hhx\n", *(unsignCharPointer), *(unsignCharPointer + 1), *(unsignCharPointer + 2), *(unsignCharPointer + 3));
+    printf("unsignInt decimal byte 0: %hhu byte 1: %hhu byte 2 %hhu byte 3 %hhu", *(unsignCharPointer), *(unsignCharPointer + 1), *(unsignCharPointer + 2), *(unsignCharPointer + 3));
 }
