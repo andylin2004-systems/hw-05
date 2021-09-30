@@ -38,4 +38,10 @@ int main(){
     }
     printf("unsignInt hex byte 0: %hhx byte 1: %hhx byte 2: %hhx byte 3: %hhx\n", *(unsignCharPointer), *(unsignCharPointer + 1), *(unsignCharPointer + 2), *(unsignCharPointer + 3));
     printf("unsignInt decimal byte 0: %hhu byte 1: %hhu byte 2: %hhu byte 3: %hhu\n", *(unsignCharPointer), *(unsignCharPointer + 1), *(unsignCharPointer + 2), *(unsignCharPointer + 3));
+    for (i = 0; i < 4; i++){
+        *(unsignCharPointer + i) += 16;
+        printf("unsignInt in hex: %x, in decimal: %u\n", unsignInt, unsignInt);
+    }
+    printf("unsignInt hex byte 0: %hhx byte 1: %hhx byte 2: %hhx byte 3: %hhx\n", *(unsignCharPointer), *(unsignCharPointer + 1), *(unsignCharPointer + 2), *(unsignCharPointer + 3));
+    printf("unsignInt decimal byte 0: %hhu byte 1: %hhu byte 2: %hhu byte 3: %hhu\n", *(unsignCharPointer), *(unsignCharPointer + 1), *(unsignCharPointer + 2), *(unsignCharPointer + 3));
 }
